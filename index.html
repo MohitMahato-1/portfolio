@@ -1,110 +1,80 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Portfolio</title>
-
-  <link rel="stylesheet" href="style.css">
-  <script src="script.js"></script>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Mohit Mahato — aspiring AI/ML engineer from Nepal. A collection of Python projects, data explorations, and things I’m learning.">
+  <meta name="theme-color" content="#f6f5ef">
+  <meta name="robots" content="index, follow">
+  <link rel="canonical" href="https://mohitmahato.com.np/">
+  <title>Mohit Mahato — Python, data & a little curiosity.</title>
+  <link rel="icon" href="favicon.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="styles.css">
+  <link rel="stylesheet" href="contact.css">
+  <script src="content.js" defer></script>
+  <script src="app.js" defer></script>
 </head>
-
 <body>
-
-  <header>
-    <h1>Portfolio</h1>
-
-    <nav>
-      <a href="#home">Home</a>
-      <a href="#about">About</a>
-      <a href="#projects">Projects</a>
-      <a href="#contact">Contact</a>
-    </nav>
-  </header>
-
-  <!-- Hero -->
-  <section class="hero" id="home">
-
-    <div class="hero-content">
-      <h2>Hello, I'm <span>Mohit</span></h2>
-
-      <h3>I am a <span id="typing"></span></h3>
-
-      <p>
-        A begginer who is learning to create website.
-      </p>
-
-      <a href="#projects" class="btn">View Projects</a>
-    </div>
-
-  </section>
-
-  <!-- About -->
-  <section id="about">
-
-    <h2 class="section-title">About Me</h2>
-
-    <div class="about">
-      <p>
-        I enjoy web development, programming and learning new
-        technologies every day.
-      </p>
-    </div>
-
-  </section>
-
-  <!-- Projects -->
-  <section id="projects">
-
-    <h2 class="section-title">Projects</h2>
-
-    <div class="projects">
-
-      <div class="project-card">
-        <h3>Portfolio Website</h3>
-        <p>Responsive personal portfolio website.</p>
-      </div>
-
-      <div class="project-card">
-        <h3>Weather App</h3>
-        <p>Weather application using API.</p>
-      </div>
-
-      <div class="project-card">
-        <h3>Student Management</h3>
-        <p>Simple student management system project.</p>
-      </div>
-
-    </div>
-
-  </section>
-
-  <!-- Contact -->
-  <section id="contact">
-
-    <h2 class="section-title">Contact Me</h2>
-
-    <div class="contact">
-
-      <input type="text" placeholder="Your Name">
-
-      <input type="email" placeholder="Your Email">
-
-      <textarea rows="5" placeholder="Your Message"></textarea>
-
-      <button class="btn" onclick="showMessage()">
-        Send Message
-      </button>
-
-    </div>
-
-  </section>
-
-  <footer>
-    <p>© 2026 Mohit Mahato</p>
-  </footer>
-
-  <script src="script.js"></script>
-
+  <a class="skip-link" href="#main">Skip to content</a>
+  <div class="page-shell">
+    <header class="site-header">
+      <a class="wordmark" href="#home" aria-label="Mohit Mahato, home">m<span class="mark-dot">.</span><span class="wordmark-name">MOHIT MAHATO</span></a>
+      <nav aria-label="Main navigation"><a href="#work">Work</a><a href="#skills">Skills</a><a href="#about">About</a><a href="#contact">Contact <span aria-hidden="true">↗</span></a></nav>
+    </header>
+    <main id="main">
+      <section class="hero" id="home" aria-labelledby="hero-heading">
+        <div class="hero-copy">
+          <p class="eyebrow"><span class="small-line"></span> ASPIRING AI / ML ENGINEER · NEPAL</p>
+          <h1 id="hero-heading">A curious mind.<br>A work in<br><em>progress.</em></h1>
+          <p class="intro">I’m Mohit Mahato. I build with Python, explore data, and learn by turning ideas into things that work.</p>
+          <div class="hero-actions"><a class="button" href="#work">Explore my work <span aria-hidden="true">↓</span></a><a class="text-link" href="https://github.com/MohitMahato-1" target="_blank" rel="noopener noreferrer">GitHub <span aria-hidden="true">↗</span><span class="sr-only"> (opens in a new tab)</span></a></div>
+          <p class="margin-note">One project, one question, one step at a time.</p>
+        </div>
+        <figure class="field-note">
+          <div class="note-top"><span>FIELD NOTES</span><span>001 / ON LEARNING</span></div>
+          <div class="hero-art" id="hero-art"><div class="art-fallback" aria-hidden="true"><span>observe</span><i></i><span>question</span><i></i><span>build</span><i></i><span>repeat</span></div></div>
+          <figcaption><span>From a small idea,<br>to a wider possibility.</span><span class="figure-number">FIG. 01</span></figcaption>
+          <span class="side-note" aria-hidden="true">a little curiosity goes a long way</span>
+        </figure>
+      </section>
+      <div class="chapter-strip"><span>BASED IN NEPAL</span><span>PYTHON · DATA · CONTINUOUS LEARNING</span><a href="#work">SCROLL TO EXPLORE <span aria-hidden="true">↓</span></a></div>
+      <section class="section work-section" id="work" aria-labelledby="work-heading">
+        <div class="section-heading"><div><p class="eyebrow">01 / SELECTED WORK</p><h2 id="work-heading">Learning, made tangible.</h2></div><p>A few projects from my journey.<br>Built to practice. Kept to improve.</p></div>
+        <div class="project-grid" id="projects"></div>
+      </section>
+      <section class="section skills-section" id="skills" aria-labelledby="skills-heading">
+        <div class="section-heading"><div><p class="eyebrow">02 / THE TOOLKIT</p><h2 id="skills-heading">What I use.<br>What comes next.</h2></div><p>Working with Python and data.<br>Building toward backend applications.</p></div>
+        <div class="skill-groups" id="skills-list"></div>
+      </section>
+      <section class="section about-section" id="about" aria-labelledby="about-heading">
+        <div><p class="eyebrow">03 / A LITTLE ABOUT ME</p><h2 id="about-heading">Still learning.<br>Always curious.</h2><div class="location-stamp"><span aria-hidden="true">↗</span> NEPAL <span class="stamp-sub">where I’m building from</span></div></div>
+        <div class="about-copy"><p class="large-copy">I’m Mohit, an aspiring AI/ML engineer from Nepal, finding my way through Python, data, and the questions they open up.</p><p>My projects so far include a banking management system, a library system, a student report card system, and data analysis work. They’re starting points for learning how to turn an idea into useful software.</p><p>I’m interested in the path from understanding data to building applications around it. This portfolio is a record of that journey, with space for the work still to come.</p><div class="current-focus"><span class="eyebrow">THE DIRECTION</span><p>Python foundations <span aria-hidden="true">→</span> Data exploration <span aria-hidden="true">→</span> AI & ML</p></div></div>
+      </section>
+      <section class="contact-section contact-directory" id="contact" aria-labelledby="contact-heading">
+        <div class="contact-intro"><p class="eyebrow">04 / LET’S CONNECT</p><h2 id="contact-heading">Good things start<br>with a <em>conversation.</em></h2><p>Have a project, a question, or something I could learn from?<br>I’d be glad to connect.</p></div>
+        <div class="contact-grid">
+          <section class="contact-card message-card" aria-labelledby="message-heading">
+            <div class="contact-card-heading"><span class="contact-symbol" aria-hidden="true">↗</span><h3 id="message-heading">Send a message</h3></div>
+            <form id="contact-form">
+              <label for="sender-name">Your name</label><input id="sender-name" name="name" autocomplete="name" maxlength="100" placeholder="How should I address you?" required>
+              <label for="sender-email">Your email</label><input id="sender-email" name="email" type="email" autocomplete="email" maxlength="254" placeholder="you@example.com" required>
+              <label for="sender-message">Your message</label><textarea id="sender-message" name="message" rows="6" minlength="10" maxlength="3000" placeholder="Tell me a little about what you have in mind…" required></textarea>
+              <button class="button message-submit" id="message-submit" type="submit" disabled>Open email draft <span aria-hidden="true">↗</span></button>
+              <p class="form-note" id="form-note">The message form will be available once my contact email is added.</p>
+              <p class="form-status" id="form-status" role="status" aria-live="polite"></p>
+            </form>
+          </section>
+          <div class="contact-stack">
+            <section class="contact-card" aria-labelledby="details-heading"><div class="contact-card-heading"><span class="contact-symbol" aria-hidden="true">@</span><h3 id="details-heading">Get in touch</h3></div><ul class="contact-facts" id="contact-facts"></ul></section>
+            <section class="contact-card faq-card" aria-labelledby="faq-heading"><div class="contact-card-heading"><span class="contact-symbol" aria-hidden="true">?</span><h3 id="faq-heading">Ask about Mohit</h3><span class="faq-badge">QUICK FAQ</span></div><p class="faq-intro">A few answers about my work and what I’m learning.</p><div class="faq-options" id="faq-options" role="group" aria-label="Choose a question"></div><div class="faq-answer" id="faq-answer" role="status" aria-live="polite"><span class="eyebrow">A NOTE FROM MOHIT</span><p id="faq-answer-text">I’m an aspiring AI/ML engineer from Nepal. Choose a question above to get to know my work.</p></div></section>
+            <section class="contact-card" aria-labelledby="social-heading"><div class="contact-card-heading"><span class="contact-symbol" aria-hidden="true">↗</span><h3 id="social-heading">Connect online</h3></div><div class="social-grid" id="social-links"></div></section>
+          </div>
+        </div>
+      </section>
+    </main>
+    <footer><a class="footer-name" href="#home">Mohit Mahato<span class="mark-dot">.</span></a><span>MADE WITH CURIOSITY · <span id="year"></span></span><span>mohitmahato.com.np</span><a href="#home">Back to top ↑</a></footer>
+  </div>
+  <noscript><p class="noscript-note">JavaScript is needed to display the editable project and skill lists. You can still find Mohit on <a href="https://github.com/MohitMahato-1">GitHub</a>.</p></noscript>
 </body>
 </html>
+
