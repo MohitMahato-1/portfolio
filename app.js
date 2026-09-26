@@ -22,8 +22,8 @@
     const title = el('h3', '', project.title); const description = el('p', 'project-description', project.description);
     const tags = el('ul', 'tags'); tags.setAttribute('aria-label', 'Project topics'); project.tags.forEach(tag => tags.append(el('li', '', tag)));
     const details = el('details', 'project-details'); const summary = el('summary', '', 'Project notes'); summary.append(el('span', 'summary-icon', '+')); const notes = el('div', 'notes-content'); notes.append(el('p', '', project.details), el('p', 'result-note', project.result));
-    const links = el('div', 'project-links'); const repo = safeUrl(project.repository); const demo = safeUrl(project.demo); if (repo) links.append(externalLink('View code', repo)); if (demo) links.append(externalLink('Live project', demo)); if (!repo && !demo) links.append(el('span', 'pending-link', 'Project links will be added here.')); notes.append(links); details.append(summary, notes);
-    body.append(meta, title, description, tags, details); card.append(visual, body); document.getElementById('projects').append(card);
+    const links = el('div', 'project-links'); const repo = safeUrl(project.repository); const demo = safeUrl(project.demo); if (repo) { const link = externalLink('View on GitHub', repo); link.classList.add('project-repo-button'); link.setAttribute('aria-label', 'View ' + project.title + ' on GitHub (opens in a new tab)'); links.append(link); } if (demo) links.append(externalLink('Live project', demo)); if (!repo && !demo) links.append(el('span', 'pending-link', 'Project links will be added here.')); details.append(summary, notes);
+    body.append(meta, title, description, tags, links, details); card.append(visual, body); document.getElementById('projects').append(card);
   }
   for (const group of data.skillGroups) {
     const section = el('div', 'skill-group'); section.append(el('h3', '', group.title), el('p', 'skill-note', group.note));
@@ -80,4 +80,3 @@
   for (const social of data.socialLinks || []) { const url = safeUrl(social.url); if (!url) continue; const link = externalLink(social.label, url); link.className = 'social-link'; document.getElementById('social-links').append(link); }
   document.getElementById('year').textContent = new Date().getFullYear();
 })();
-

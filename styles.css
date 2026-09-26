@@ -12,4 +12,5 @@
 .project-description,.about-copy>p,.contact-section p:last-child{font-size:16px}
 .preview-label{letter-spacing:0;font-size:11px}
 @media(max-width:720px){footer{grid-template-columns:1fr}footer>span:nth-child(2),footer>a:last-child{text-align:left}.skill-status{max-width:145px}.chapter-strip{font-size:11px}.section-heading>p br{display:initial}}
-
+/* Keep repository actions visible without expanding project notes. */
+.project-links{flex-wrap:wrap;align-items:center;margin-bottom:18px}.project-repo-button{display:inline-flex;align-items:center;min-height:44px;border:1px solid var(--blue);padding:9px 14px;font-size:13px;text-decoration:none}.project-repo-button:hover{background:var(--blue);color:white}
