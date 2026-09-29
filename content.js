@@ -18,7 +18,17 @@ window.portfolio = {
   heroImage: "", // Optional decorative Higgsfield artwork. Site works without it.
   projects: [
     {
-      id: "banking", number: "01", category: "PYTHON / APPLICATION",
+      id: "fruitfly", number: "01", category: "NEUROSCIENCE / SIMULATION",
+      title: "Fruit fly escape reflex",
+      description: "A fruit fly’s escape reflex, run straight from its wiring diagram with no training, and hooked up to a webcam.",
+      tags: ["Python", "NumPy", "SciPy", "OpenCV"],
+      concept: "A real brain, wired from data.", visual: "raster",
+      repository: "https://github.com/MohitMahato-1/fruitfly-escape", demo: "", screenshot: "", screenshotAlt: "Fruit fly escape webcam demo screenshot",
+      details: "Turns the 165,122 traced neurons of the male fruit fly connectome (MaleCNS v1.0) into a leaky integrate-and-fire network, then carves out a 12,510-neuron escape circuit that runs faster than real time. Bring your hand at the fly on screen and the circuit decides whether it takes off.",
+      result: "Driving the looming detectors fires the giant fiber while photoreceptors barely reach it. On the test clip the intact circuit escapes 3 times; a shuffled copy escapes 0 times and seizes."
+    },
+    {
+      id: "banking", number: "02", category: "PYTHON / APPLICATION",
       title: "Banking management system",
       description: "A command-line banking system for creating accounts, making deposits and withdrawals, and checking balances.",
       tags: ["Python", "OOP", "File handling"],
@@ -28,7 +38,7 @@ window.portfolio = {
       result: "A learning project with basic validation; not intended for real banking use."
     },
     {
-      id: "analysis", number: "02", category: "DATA / EXPLORATION",
+      id: "analysis", number: "03", category: "DATA / EXPLORATION",
       title: "COVID-19 data visualization",
       description: "Exploring country-level COVID-19 data through comparisons of cases, recoveries, deaths, and WHO regions.",
       tags: ["pandas", "NumPy", "Matplotlib"],
@@ -38,7 +48,7 @@ window.portfolio = {
       result: "Analysis uses a static dataset. Project screenshots and a summary of findings will be added here."
     },
     {
-      id: "titanic", number: "03", category: "MACHINE LEARNING / IN PROGRESS",
+      id: "titanic", number: "04", category: "MACHINE LEARNING / IN PROGRESS",
       title: "Titanic survival prediction",
       description: "A hands-on machine learning project exploring passenger survival with the Kaggle Titanic dataset.",
       tags: ["Python", "Machine learning", "Feature engineering"],
@@ -48,7 +58,7 @@ window.portfolio = {
       result: "Work in progress: the repository lists feature engineering as complete, with model building and evaluation next."
     },
     {
-      id: "library", number: "04", category: "SYSTEMS / ORGANIZATION", hidden: true, // Show once the repository is public.
+      id: "library", number: "05", category: "SYSTEMS / ORGANIZATION", hidden: true, // Show once the repository is public.
       title: "Library system",
       description: "A project centered on organizing a library and making its information easier to manage.",
       tags: ["Library", "Management system"],
@@ -58,7 +68,7 @@ window.portfolio = {
       result: "Results and project learnings to be added."
     },
     {
-      id: "report", number: "05", category: "SYSTEMS / RECORDS", hidden: true, // Show once the repository is public.
+      id: "report", number: "06", category: "SYSTEMS / RECORDS", hidden: true, // Show once the repository is public.
       title: "Student report card system",
       description: "A project exploring how student report cards can be organized in a software system.",
       tags: ["Student records", "Report cards"],
