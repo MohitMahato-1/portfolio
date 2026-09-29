@@ -10,7 +10,7 @@ window.portfolio = {
   ],
   // Authored FAQ answers, not a live AI chatbot. Update with verified resume details.
   faq: [
-    { question: "What have you built?", answer: "My projects include a Python banking management system, COVID-19 data visualization, Titanic survival prediction, a library system, and a student report card system. Find the available GitHub repositories in Selected Work above." },
+    { question: "What have you built?", answer: "My projects include a simulation of a fruit fly’s escape reflex built from its connectome, with a webcam demo, plus a Python banking management system, COVID-19 data visualization, Titanic survival prediction, a library system, and a student report card system. Find the available GitHub repositories in Selected Work above." },
     { question: "Which tools do you use?", answer: "I use Python, pandas, NumPy, and data visualization in my projects, and I’ve also worked with machine learning. FastAPI, REST APIs, SQL, PostgreSQL, Docker, and cloud deployment are currently on my learning list." },
     { question: "What are you working toward?", answer: "I’m an aspiring AI/ML engineer from Nepal. My focus is on developing Python foundations, exploring data, and learning to build useful applications." },
     { question: "Can we arrange a meeting?", answer: "Email contact@mohitmahato.com.np to discuss a suitable time. This FAQ cannot schedule or confirm a meeting." }
