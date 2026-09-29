@@ -14,3 +14,8 @@
 @media(max-width:720px){footer{grid-template-columns:1fr}footer>span:nth-child(2),footer>a:last-child{text-align:left}.skill-status{max-width:145px}.chapter-strip{font-size:11px}.section-heading>p br{display:initial}}
 /* Keep repository actions visible without expanding project notes. */
 .project-links{flex-wrap:wrap;align-items:center;margin-bottom:18px}.project-repo-button{display:inline-flex;align-items:center;min-height:44px;border:1px solid var(--blue);padding:9px 14px;font-size:13px;text-decoration:none}.project-repo-button:hover{background:var(--blue);color:white}
+/* Calmer small labels: less tracking, softer weight, decorative bits hidden on small screens. */
+.chapter-strip,footer,.project-meta,.tags li,.skill-status{letter-spacing:.3px}
+.eyebrow,.hero .eyebrow{letter-spacing:.6px}
+.figure-number{text-align:right;line-height:1.4}
+@media(max-width:720px){.side-note{display:none}.chapter-strip{font-size:11px;letter-spacing:.2px}}

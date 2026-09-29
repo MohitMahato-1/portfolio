@@ -15,7 +15,7 @@
     const card = el('article', 'project-card');
     const visual = el('div', 'project-visual ' + project.visual);
     const imageUrl = safeUrl(project.screenshot);
-    const placeholder = () => { visual.replaceChildren(); const graphic = el('div', 'concept-graphic'); graphic.setAttribute('aria-hidden', 'true'); graphic.innerHTML = patterns[project.visual] || ''; visual.append(graphic, el('span', 'preview-label', 'CONCEPT STUDY · SCREENSHOT TO COME')); };
+    const placeholder = () => { visual.replaceChildren(); const graphic = el('div', 'concept-graphic'); graphic.setAttribute('aria-hidden', 'true'); graphic.innerHTML = patterns[project.visual] || ''; visual.append(graphic, el('span', 'preview-label', 'CONCEPT SKETCH · NOT A SCREENSHOT')); };
     if (imageUrl) { const img = el('img'); img.src = imageUrl; img.alt = project.screenshotAlt; img.loading = 'lazy'; img.width = 720; img.height = 440; img.addEventListener('error', placeholder, { once: true }); visual.append(img); } else placeholder();
     const body = el('div', 'project-body');
     const meta = el('div', 'project-meta'); meta.append(el('span', '', project.category), el('span', '', '/' + project.number));
