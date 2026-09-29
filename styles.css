@@ -19,4 +19,4 @@
 .eyebrow,.hero .eyebrow{letter-spacing:.6px}
 .figure-number{text-align:right;line-height:1.4}
 @media(max-width:720px){.side-note{display:none}.chapter-strip{font-size:11px;letter-spacing:.2px}}
-@media(max-width:1000px){.field-note figcaption{display:block}.figure-number{display:block;text-align:left;margin-top:12px}}
+@media(max-width:1200px){.field-note figcaption{display:block}.figure-number{display:block;text-align:left;margin-top:12px}}
