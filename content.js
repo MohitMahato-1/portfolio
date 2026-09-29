@@ -48,7 +48,7 @@ window.portfolio = {
       result: "Work in progress: the repository lists feature engineering as complete, with model building and evaluation next."
     },
     {
-      id: "library", number: "04", category: "SYSTEMS / ORGANIZATION",
+      id: "library", number: "04", category: "SYSTEMS / ORGANIZATION", hidden: true, // Show once the repository is public.
       title: "Library system",
       description: "A project centered on organizing a library and making its information easier to manage.",
       tags: ["Library", "Management system"],
@@ -58,7 +58,7 @@ window.portfolio = {
       result: "Results and project learnings to be added."
     },
     {
-      id: "report", number: "05", category: "SYSTEMS / RECORDS",
+      id: "report", number: "05", category: "SYSTEMS / RECORDS", hidden: true, // Show once the repository is public.
       title: "Student report card system",
       description: "A project exploring how student report cards can be organized in a software system.",
       tags: ["Student records", "Report cards"],

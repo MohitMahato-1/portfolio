@@ -11,7 +11,7 @@
     catalog: '<div class="mini-catalog"><div class="catalog-index">INDEX / LIBRARY</div><div><span>01</span><b>Catalog</b><i>────────</i></div><div><span>02</span><b>Organize</b><i>──────</i></div><div><span>03</span><b>Discover</b><i>────────</i></div></div>',
     report: '<div class="mini-report"><div><span>STUDENT / REPORT</span><b>R</b></div><div class="report-rule"></div><div class="report-line"><i></i><span>──</span></div><div class="report-line"><i></i><span>──</span></div><div class="report-line"><i></i><span>──</span></div><div class="report-end">A CLEARER VIEW OF PROGRESS</div></div>'
   };
-  for (const project of data.projects) {
+  for (const project of data.projects.filter(item => !item.hidden)) {
     const card = el('article', 'project-card');
     const visual = el('div', 'project-visual ' + project.visual);
     const imageUrl = safeUrl(project.screenshot);

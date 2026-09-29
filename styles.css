@@ -20,3 +20,5 @@
 .figure-number{text-align:right;line-height:1.4}
 @media(max-width:720px){.side-note{display:none}.chapter-strip{font-size:11px;letter-spacing:.2px}}
 @media(max-width:1200px){.field-note figcaption{display:block}.figure-number{display:block;text-align:left;margin-top:12px}}
+/* An odd final project spans the row as a feature, so the grid never leaves a gap. */
+@media(min-width:721px){.project-card:last-child:nth-child(odd){grid-column:1/-1;display:grid;grid-template-columns:1fr 1fr;gap:32px;align-items:start}.project-card:last-child:nth-child(odd) .project-body{padding-top:0}}
