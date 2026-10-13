@@ -1,0 +1,53 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Methods, reproducibility, and limits of a connectome-based fruit fly escape-circuit simulation.">
+  <title>Fruit fly escape simulation — Mohit Mahato</title>
+  <link rel="icon" href="favicon.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="styles.css">
+  <style>
+    .case-study { max-width: 820px; margin: 4rem auto; padding: 0 1.5rem 5rem; }
+    .case-study h1 { max-width: 18ch; }
+    .case-study h2 { margin-top: 2.5rem; }
+    .case-study figure { margin: 2rem 0; }
+    .case-study figure img { display: block; width: 100%; height: auto; border-radius: 1rem; }
+    .case-study figcaption, .case-study .caveat { color: #555; font-size: .95rem; }
+    .case-study pre { overflow-x: auto; padding: 1rem; background: #f1f0e9; border-radius: .75rem; }
+  </style>
+</head>
+<body>
+  <main class="case-study">
+    <a href="index.html#work">← Back to portfolio</a>
+    <p class="eyebrow">COMPUTATIONAL EXPERIMENT · PYTHON</p>
+    <h1>Can a connectome-based circuit react to a looming object?</h1>
+    <p>I built a simplified spiking-neuron simulation from the male fruit fly central nervous system connectome and connected an OpenCV motion detector to a small escape-circuit simulation. The demo tests whether looming visual input can trigger the simulated giant fiber and an on-screen takeoff response.</p>
+    <figure>
+      <img src="assets/fruitfly-demo.png" alt="A rendered frame from the intact fruit fly simulation, showing the video input and neural activity display" width="960" height="600">
+      <figcaption>Rendered output from the bundled test clip, not a mockup.</figcaption>
+    </figure>
+    <h2>Experiment and comparison</h2>
+    <p>The model uses a leaky integrate-and-fire network and a 12,510-neuron circuit subset carved from MaleCNS v1.0. The demo turns outward optical flow from an approaching object into input for looming-sensitive neurons. I then ran the same bundled clip with intact wiring and with each source neuron's outgoing connections shuffled among random targets while preserving its weights.</p>
+    <table>
+      <thead><tr><th>Wiring</th><th>Escapes</th><th>Swats</th><th>Spasms</th></tr></thead>
+      <tbody><tr><td>Intact</td><td>3</td><td>0</td><td>0</td></tr><tr><td>Shuffled control</td><td>0</td><td>1</td><td>6</td></tr></tbody>
+    </table>
+    <p>These are counts from one short clip and this implementation's thresholds. They show different behavior in this demo configuration; they do not prove that the biological circuit works this way.</p>
+    <h2>Reproduce the demo</h2>
+    <p>Clone the <a href="https://github.com/MohitMahato-1/fruitfly-escape">repository</a>, install its pinned packages, then run both configurations:</p>
+    <pre><code>python -m pip install -r requirements.txt
+python swat.py --source looming-test.mp4 --headless --wiring intact
+python swat.py --source looming-test.mp4 --headless --wiring shuffled</code></pre>
+    <p>The circuit and checked metadata needed for the demo are included. Rebuilding from all connectome tables is a separate, larger-data workflow documented in the repository README.</p>
+    <h2>Limitations</h2>
+    <ul>
+      <li>The neuron model simplifies biological dynamics and transmitter signs; it is not a detailed physiological model.</li>
+      <li>The input is hand-designed optical-flow processing and a synthetic test clip, not a calibrated visual pathway.</li>
+      <li>One clip and one shuffled control are a demonstration, not a statistical experiment or biological validation.</li>
+      <li>The connectome source and model paper are credited in the repository README.</li>
+    </ul>
+    <p><a href="https://github.com/MohitMahato-1/fruitfly-escape">View source code and full methods on GitHub →</a></p>
+  </main>
+</body>
+</html>

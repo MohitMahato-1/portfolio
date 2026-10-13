@@ -1,37 +1,30 @@
 # Mohit Mahato — Portfolio
 
-Personal portfolio for an aspiring AI/ML engineer from Nepal.
+Static portfolio for Mohit Mahato, a BIT student majoring in IT in Nepal and seeking a first internship in Python development, data analysis, or machine learning.
 
-**Live website:** https://mohitmahato.com.np/
+## Preview locally
 
-## Website files
+The site has no build step or runtime framework. From this directory, start any static server, for example:
 
-- `index.html` — introduction, section layout, about text, and metadata
-- `content.js` — projects, skills, contact details, social links, and FAQ answers
-- `app.js` — project rendering, notebook plot, FAQ, and contact form
-- `styles.css` — typography, layout, and responsive styles
-- `contact.css` — contact section and form styles
-- `favicon.svg` — site icon
+```bash
+python -m http.server 8000
+```
 
-This is a static website with no runtime framework or build step. Serve the repository with any local static web server to preview it.
+Then open `http://localhost:8000`. The project and skill cards are rendered from `content.js` by `app.js`.
 
-## Update the content
+## Files
 
-Edit `content.js`. Each project has editable repository, demo, screenshot, screenshotAlt, details, and result fields. Empty links display honest placeholders. Add screenshots to an `assets/` folder and use relative paths such as `assets/banking.webp`.
+- `index.html`, `styles.css`, and `contact.css` define the accessible page structure and responsive layout.
+- `content.js` contains project descriptions, skills, links, and FAQ answers. Keep claims consistent with the linked repositories.
+- `app.js` renders the content, FAQ, and contact form. The form opens a draft in the visitor's email app; it does not send email.
+- `assets/` contains project output screenshots used by the homepage.
+- `fruitfly-case-study.html` explains the featured simulation and its measured demo results.
+- `favicon.svg` is the site icon.
 
-Each skill has an independent name and status. Unconfirmed tools are labeled **Currently learning**. Only change a status when it reflects actual experience.
+## Content guidance
 
-The contact section uses the confirmed email, GitHub, and LinkedIn links. The form opens a draft in the visitor's email app; the visitor reviews and sends it there. It does not send email from a server or claim delivery.
-
-The FAQ uses authored answers, not a live AI service. It has no API costs and cannot book meetings. Update the answers when verified résumé details are available.
-
-The hero plot and project concept studies are illustrative, not project screenshots or measured results. No paid generated asset is required.
+Only list tools used in the linked projects as experience; keep learning goals labeled as such. Distinguish generated output from illustrative visuals, report the dataset and evaluation limits, and avoid implying the demo validates biological behavior. The FAQ answers are authored text, not a live AI service.
 
 ## Hosting
 
-The live site is hosted on the Cloudflare Worker `portfolio`, with `mohitmahato.com.np` connected as its production domain. Production is public; Cloudflare preview deployments remain protected.
-
-For a manual Cloudflare update, upload the six website files listed above through the Worker's **New deployment** screen. Include any screenshot assets you add. Do not upload private documents, credentials, or local configuration.
-
-The existing `CNAME` file is retained for repository compatibility. DNS and email settings are managed in Cloudflare.
-
+The public domain is `https://mohitmahato.com.np/`. Review the site locally before manually deploying the static files. Upload the HTML, JavaScript, CSS, icon, case study, and `assets/` directory together so links and images resolve. Keep private documents, credentials, and local configuration out of the deployment. The existing `CNAME` file is retained for repository compatibility.

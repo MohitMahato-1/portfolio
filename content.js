@@ -1,100 +1,111 @@
-// EDIT THIS FILE to update portfolio content. Empty fields stay honest placeholders.
-// Use https:// links; screenshot paths can be relative, e.g. assets/banking.webp.
+// Public project facts. Keep outcomes tied to the linked source and its limitations.
 window.portfolio = {
   email: "contact@mohitmahato.com.np",
   location: "Nepal",
-  phone: "", // Optional public number; hidden when empty.
   socialLinks: [
     { label: "GitHub", url: "https://github.com/MohitMahato-1" },
     { label: "LinkedIn", url: "https://www.linkedin.com/in/mohit-mahato-8a8271305/" }
   ],
-  // Authored FAQ answers, not a live AI chatbot. Update with verified resume details.
   faq: [
-    { question: "What have you built?", answer: "My projects include a simulation of a fruit fly’s escape reflex built from its connectome, with a webcam demo, plus a Python banking management system, COVID-19 data visualization, Titanic survival prediction, a library system, and a student report card system. Find the available GitHub repositories in Selected Work above." },
-    { question: "Which tools do you use?", answer: "I use Python, pandas, NumPy, and data visualization in my projects, and I’ve also worked with machine learning. FastAPI, REST APIs, SQL, PostgreSQL, Docker, and cloud deployment are currently on my learning list." },
-    { question: "What are you working toward?", answer: "I’m an aspiring AI/ML engineer from Nepal. My focus is on developing Python foundations, exploring data, and learning to build useful applications." },
-    { question: "Can we arrange a meeting?", answer: "Email contact@mohitmahato.com.np to discuss a suitable time. This FAQ cannot schedule or confirm a meeting." }
-  ],
-  heroImage: "", // Optional decorative Higgsfield artwork. Site works without it.
-  projects: [
     {
-      id: "fruitfly", number: "01", category: "NEUROSCIENCE / SIMULATION",
-      title: "Fruit fly escape reflex",
-      description: "A fruit fly’s escape reflex, run straight from its wiring diagram with no training, and hooked up to a webcam.",
-      tags: ["Python", "NumPy", "SciPy", "OpenCV"],
-      concept: "A real brain, wired from data.", visual: "raster",
-      repository: "https://github.com/MohitMahato-1/fruitfly-escape", demo: "", screenshot: "", screenshotAlt: "Fruit fly escape webcam demo screenshot",
-      details: "Turns the 165,122 traced neurons of the male fruit fly connectome (MaleCNS v1.0) into a leaky integrate-and-fire network, then carves out a 12,510-neuron escape circuit that runs faster than real time. Bring your hand at the fly on screen and the circuit decides whether it takes off.",
-      result: "Driving the looming detectors fires the giant fiber while photoreceptors barely reach it. On the test clip the intact circuit escapes 3 times; a shuffled copy escapes 0 times and seizes."
+      question: "What are you looking for?",
+      answer: "I’m a BIT student majoring in IT, based in Nepal, seeking my first internship in Python development, data analysis, or machine learning. Email me to discuss the role and availability."
     },
     {
-      id: "banking", number: "02", category: "PYTHON / APPLICATION",
-      title: "Banking management system",
-      description: "A command-line banking system for creating accounts, making deposits and withdrawals, and checking balances.",
-      tags: ["Python", "OOP", "File handling"],
-      concept: "A place for every transaction.", visual: "ledger",
-      repository: "https://github.com/MohitMahato-1/CLI_based_bank_management_system", demo: "", screenshot: "", screenshotAlt: "Banking management system screenshot",
-      details: "Built with Python classes, text-file storage, and exception handling to practice structuring an interactive application.",
-      result: "A learning project with basic validation; not intended for real banking use."
+      question: "What have you built?",
+      answer: "My public projects include a connectome-based fruit fly simulation, Titanic survival classification, COVID-19 data analysis, and a Python command-line banking exercise. Each project above links to its code and describes its limitations."
     },
     {
-      id: "analysis", number: "03", category: "DATA / EXPLORATION",
-      title: "COVID-19 data visualization",
-      description: "Exploring country-level COVID-19 data through comparisons of cases, recoveries, deaths, and WHO regions.",
-      tags: ["pandas", "NumPy", "Matplotlib"],
-      concept: "From observations to understanding.", visual: "chart",
-      repository: "https://github.com/MohitMahato-1/covid19-data-visualization", demo: "", screenshot: "", screenshotAlt: "COVID-19 data visualization screenshot",
-      details: "Uses pandas for cleaning and aggregation, NumPy for numerical operations, and Matplotlib for bar charts, pie charts, and scatter plots.",
-      result: "Analysis uses a static dataset. Project screenshots and a summary of findings will be added here."
+      question: "Which tools do you use?",
+      answer: "My projects use Python, pandas, NumPy, Matplotlib, and scikit-learn, with SciPy and OpenCV in the fruit fly simulation. SQL, FastAPI, PostgreSQL, and Docker are still on my learning list."
     },
     {
-      id: "titanic", number: "04", category: "MACHINE LEARNING / IN PROGRESS",
-      title: "Titanic survival prediction",
-      description: "A hands-on machine learning project exploring passenger survival with the Kaggle Titanic dataset.",
-      tags: ["Python", "Machine learning", "Feature engineering"],
-      concept: "Turning observations into useful features.", visual: "chart",
-      repository: "https://github.com/MohitMahato-1/titanic-survival-prediction", demo: "", screenshot: "", screenshotAlt: "Titanic analysis notebook screenshot",
-      details: "Exploratory analysis and feature engineering include family size, travelling alone, and titles extracted from passenger names.",
-      result: "Work in progress: the repository lists feature engineering as complete, with model building and evaluation next."
-    },
-    {
-      id: "library", number: "05", category: "SYSTEMS / ORGANIZATION", hidden: true, // Show once the repository is public.
-      title: "Library system",
-      description: "A project centered on organizing a library and making its information easier to manage.",
-      tags: ["Library", "Management system"],
-      concept: "A little order. A lot to discover.", visual: "catalog",
-      repository: "", demo: "", screenshot: "", screenshotAlt: "Library system screenshot",
-      details: "Project language, features, and implementation notes to be confirmed and added.",
-      result: "Results and project learnings to be added."
-    },
-    {
-      id: "report", number: "06", category: "SYSTEMS / RECORDS", hidden: true, // Show once the repository is public.
-      title: "Student report card system",
-      description: "A project exploring how student report cards can be organized in a software system.",
-      tags: ["Student records", "Report cards"],
-      concept: "Giving information a clear structure.", visual: "report",
-      repository: "", demo: "", screenshot: "", screenshotAlt: "Student report card system screenshot",
-      details: "Project language, calculation rules, and features to be confirmed and added.",
-      result: "Results and project learnings to be added."
+      question: "How can we connect?",
+      answer: "Email contact@mohitmahato.com.np or use the LinkedIn link below. The form opens a draft in your email app; this page does not send messages or schedule meetings."
     }
   ],
-  // Change each status independently. Unconfirmed tools must stay Currently learning.
+  projects: [
+    {
+      id: "fruitfly",
+      number: "01",
+      category: "NEUROSCIENCE / SIMULATION",
+      title: "Fruit fly escape reflex",
+      description: "Can a simplified spiking circuit built from a fruit fly connectome respond to a looming object?",
+      tags: ["Python", "NumPy", "SciPy", "OpenCV"],
+      repository: "https://github.com/MohitMahato-1/fruitfly-escape",
+      screenshot: "assets/fruitfly-demo.png",
+      screenshotAlt: "Frame rendered by the fruit fly demo using the bundled input clip",
+      visualNote: "Recorded demo frame · bundled input clip",
+      details: "A leaky integrate-and-fire simulation uses a 12,510-neuron subset of the MaleCNS connectome. Programmed optical-flow inputs stimulate looming detectors; giant-fiber activity drives an animated escape response.",
+      result: "On the bundled clip: 3 escapes, 0 swats, and 0 spasms for the intact circuit; 0 escapes, 1 swat, and 6 spasms for the shuffled control.",
+      limitation: "One clip and one control configuration. This is a simplified neuroscience simulation, not a trained ML model or a validation of real fly behavior.",
+      caseStudy: "fruitfly-case-study.html"
+    },
+    {
+      id: "titanic",
+      number: "02",
+      category: "MACHINE LEARNING / CLASSIFICATION",
+      title: "Titanic survival prediction",
+      description: "A reproducible classification exercise that compares a simple baseline with a model on held-out passengers.",
+      tags: ["Python", "pandas", "scikit-learn"],
+      repository: "https://github.com/MohitMahato-1/titanic-survival-prediction",
+      screenshot: "assets/titanic-evaluation.png",
+      screenshotAlt: "Held-out evaluation plot generated by the Titanic training script",
+      visualNote: "Generated from the held-out evaluation",
+      details: "Passenger attributes and engineered family features are used to explore survival prediction. The project documents its data split, preprocessing, baseline, and evaluation.",
+      result: "Evaluation and its generated figure are recorded in the project repository.",
+      limitation: "A small historical benchmark. Its results do not establish performance on present-day or unrelated passenger data."
+    },
+    {
+      id: "analysis",
+      number: "03",
+      category: "DATA / EXPLORATION",
+      title: "COVID-19 data analysis",
+      description: "Country and WHO-region comparisons from a static COVID-19 CSV snapshot.",
+      tags: ["pandas", "NumPy", "Matplotlib"],
+      repository: "https://github.com/MohitMahato-1/covid19-data-visualization",
+      screenshot: "assets/covid-analysis.png",
+      screenshotAlt: "Country comparison generated from the repository’s static COVID-19 dataset",
+      visualNote: "Dataset snapshot · not current case counts",
+      details: "Uses pandas to validate, aggregate, and compare country-level case and outcome counts, then produces reproducible charts.",
+      result: "The repository includes the input CSV, five generated charts, and a machine-readable aggregate summary.",
+      limitation: "Reported counts depend on testing and reporting practices. Absolute totals are not population-adjusted risk estimates, and this is not live surveillance."
+    },
+    {
+      id: "banking",
+      number: "04",
+      category: "PYTHON / CLI APPLICATION",
+      title: "Banking management system",
+      description: "A command-line exercise in account creation, deposits, withdrawals, and balance checks.",
+      tags: ["Python", "OOP", "File handling"],
+      repository: "https://github.com/MohitMahato-1/CLI_based_bank_management_system",
+      screenshot: "",
+      details: "A small Python application for practicing input validation, persistence, and transaction logic.",
+      result: "The repository explains the supported commands and includes automated checks for account and transaction behavior.",
+      limitation: "An educational local application. It is not suitable for real money, sensitive account information, or concurrent banking operations."
+    }
+  ],
   skillGroups: [
-    { title: "Python and data", note: "Tools I’ve used to explore data and build projects.", skills: [
-      { name: "Python", status: "Used in projects" },
-      { name: "Data analysis", status: "Used in projects" },
-      { name: "pandas", status: "Used in projects" },
-      { name: "NumPy", status: "Used in projects" },
-      { name: "Data visualization", status: "Used in projects" },
-      { name: "Machine learning", status: "Used in projects" }
-    ]},
-    { title: "Backend and deployment", note: "Learning how ideas become applications.", skills: [
-      { name: "FastAPI", status: "Currently learning" },
-      { name: "REST APIs", status: "Currently learning" },
-      { name: "SQL", status: "Currently learning" },
-      { name: "PostgreSQL", status: "Currently learning" },
-      { name: "Docker", status: "Currently learning" },
-      { name: "Cloud deployment", status: "Currently learning" }
-    ]}
+    {
+      title: "Used in these projects",
+      note: "Follow the project links to see the implementation.",
+      skills: [
+        { name: "Python", status: "Used in projects" },
+        { name: "pandas & NumPy", status: "Used in projects" },
+        { name: "Matplotlib", status: "Used in projects" },
+        { name: "scikit-learn", status: "Used in projects" },
+        { name: "SciPy & OpenCV", status: "Used in projects" }
+      ]
+    },
+    {
+      title: "Currently learning",
+      note: "These are learning goals, not a claim of production experience.",
+      skills: [
+        { name: "SQL & PostgreSQL", status: "Currently learning" },
+        { name: "FastAPI & REST APIs", status: "Currently learning" },
+        { name: "Docker", status: "Currently learning" },
+        { name: "Cloud deployment", status: "Currently learning" }
+      ]
+    }
   ]
 };
